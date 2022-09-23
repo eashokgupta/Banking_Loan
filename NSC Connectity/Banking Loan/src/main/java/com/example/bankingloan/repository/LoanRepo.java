@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LoanRepo extends JpaRepository<LoanTypes,Long> {
-    static LoanEntity findbyLoanType(String loanTypes) {
-        return new LoanEntity();
-    }
+
 }
+

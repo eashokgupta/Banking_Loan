@@ -9,6 +9,6 @@ public interface LoanService {
     LoanDto save(LoanDto loanDto);
 
 
-    LoanDto  getDetails(String id);
+    LoanDto  getDetails(String loanTypes);
 
 }

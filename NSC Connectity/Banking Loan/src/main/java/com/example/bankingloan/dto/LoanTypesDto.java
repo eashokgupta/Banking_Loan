@@ -8,5 +8,5 @@ import lombok.Data;
 public class LoanTypesDto {
     private Long id;
 
-    private String loanType;
+    private String loanTypes;
 }

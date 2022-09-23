@@ -20,9 +20,9 @@ public class LoanController {
         return new ResponseEntity<>(loanDto1, HttpStatus.CREATED);
 
     }
-    @GetMapping("/loantype/{id}")
-    public ResponseEntity<LoanDto> get(@PathVariable String id){
-    LoanDto loanDto=loanService.getDetails(id);
+    @GetMapping("/loantype/{loanTypes}")
+    public ResponseEntity<LoanDto> get(@PathVariable String loanTypes){
+    LoanDto loanDto=loanService.getDetails(loanTypes);
 return new ResponseEntity<>(loanDto,HttpStatus.OK);
     }
 }
